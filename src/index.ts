@@ -1,6 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
-import playerRoutes from './routes/playerRoutes';
+import rocketRoutes from './routes/rocketRoutes';
+import pubgRoutes from "./routes/pubgRoutes";
 
 dotenv.config();
 
@@ -9,7 +10,8 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
-app.use('/api/rocket', playerRoutes);
+app.use('/api/rocket', rocketRoutes);
+app.use('/api/pubg', pubgRoutes);
 
 app.get('/', (req, res) => {
     res.send('Welcome to the Tracker API Integration!');
