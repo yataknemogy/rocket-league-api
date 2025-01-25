@@ -10,7 +10,7 @@ This project provides a REST API to interact with Rocket League game data via Ra
 
 1. **Clone the repository:**
    ```bash
-   git clone <your-repository-url>
+   git clone https://github.com/yataknemogy/rocket-league-api.git
    ```
 
 2. **Install dependencies:**
